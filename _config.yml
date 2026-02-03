@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://janak0ff.github.io"
 
 github:
-  janak0ff: janak0ff # change to your GitHub sudiplun
+  janak0ff: github_username # change to your GitHub sudiplun
 
 twitter:
-  janak0ff: janak0ff # change to your Twitter sudiplun
+  janak0ff: twitter_username # change to your Twitter sudiplun
 
 social:
   # Change to your full name.
@@ -38,11 +38,9 @@ social:
   email: [EMAIL_ADDRESS] # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/janak0ff # change to your Twitter homepage
-    - https://github.com/janak0ff # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/sudiplun
-    # - https://www.linkedin.com/in/sudiplun
+    - https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/username # change to your GitHub homepage
+    - https://linkedin.com/in/username # change to your LinkedIn homepage
 
 # Site Verification Settings
 webmaster_verifications:
