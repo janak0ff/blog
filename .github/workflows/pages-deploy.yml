@@ -46,9 +46,16 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -d "_site"
         env:
           JEKYLL_ENV: "production"
+
+      - name: Debug - List build output
+        run: |
+          echo "=== Build output structure ==="
+          ls -la _site/
+          echo "=== CSS files ==="
+          find _site -name "*.css" | head -20
 
       # - name: Test site
         # run: |
@@ -59,7 +66,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: "_site"
 
   deploy:
     environment:
