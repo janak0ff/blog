@@ -1,7 +1,0 @@
-services:
-  blog:
-    container_name: luniox
-    build: .
-    image: luniox:prod
-    ports:
-      - "8081:80"
