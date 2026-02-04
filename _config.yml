@@ -38,9 +38,9 @@ social:
   email: janak.shrestha.it@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://linkedin.com/in/janakkss # change to your LinkedIn homepage
     - https://twitter.com/devjanak0ff # change to your Twitter homepage
     - https://github.com/janak0ff # change to your GitHub homepage
-    - https://linkedin.com/in/janakkss # change to your LinkedIn homepage
 
 # Site Verification Settings
 webmaster_verifications:
