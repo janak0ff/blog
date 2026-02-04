@@ -1,43 +1,47 @@
 # Blog Project
 
-This is a Jekyll-based blog.
+This is a Jekyll-based blog, containerized with Docker for easy local development and deployed via GitHub Actions.
 
-## Prerequisites
+## Local Development
 
-You need **Ruby** and **Bundler** installed. 
-Since you are on Linux (Debian/Ubuntu likely), run:
+### Prerequisites
+- [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+- That's it! No Ruby or Jekyll installation required on your host.
+
+### Running the App
+To start the blog locally:
 
 ```bash
-# 1. Update package lists
-sudo apt-get update
-
-# 2. Install Ruby and development tools (required for Jekyll extensions)
-sudo apt-get install ruby-full build-essential zlib1g-dev
-
-# 3. Configure gem installation path (avoid sudo for gems)
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
-echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-
-# 4. Install Jekyll and Bundler
-gem install jekyll bundler
+./run.sh
 ```
 
-## How to Run
+This will:
+1. Build the Docker image.
+2. Start the container in the background.
+3. Serve the blog at `http://localhost:8081`.
 
-1. **Install Dependencies** (run this once):
-   ```bash
-   bundle install
-   ```
+### Stopping the App
+To stop the running container:
 
-2. **Start the local server**:
-   ```bash
-   bundle exec jekyll serve
-   ```
+```bash
+./stop.sh
+```
 
-3. Open your browser to: `http://127.0.0.1:4000/blog/`
+## Deployment
+
+The project is configured to deploy automatically to GitHub Pages using **GitHub Actions**.
+
+### Workflow
+1. **Push Changes**: When you push code to the `master` (or `main`) branch.
+2. **GitHub Action**: The workflow defined in `.github/workflows/pages-deploy.yml` triggers.
+3. **Build & Deploy**: It builds the Jekyll site and deploys the artifacts to the `gh-pages` branch (or configured Pages environment).
+4. **Live Site**: Your changes go live on your GitHub Pages URL context.
+
+### Configuration
+- **_config.yml**: Ensure `url` and `baseurl` are correctly set for your production environment.
+- **GitHub Settings**: Go to Repository Settings -> Pages, and ensure the source is set to "GitHub Actions" or the specific branch pushed by the action.
 
 ## Writing Posts
 
 Create new markdown files in `_posts/` with the format `YYYY-MM-DD-title.md`.
+
