@@ -3,7 +3,7 @@ title: AWS Application Load Balancer with a Custom Domain (Cloudflare)
 date: 2025-06-27
 categories: [cloud]
 image:
-  path: /assets/img/Screenshot_20250627_141614.png
+  path: /_imgs/post/Screenshot_20250627_141614.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: AWS Application Load Balancer with a Custom Domain (Cloudflare)
 tags:
@@ -86,7 +86,7 @@ For **each** of your backend EC2 instances:
     * **Source:** For now, you can temporarily set this to `0.0.0.0/0` for initial testing of the ALB setup (though not recommended for long-term). **However, the best practice is to restrict this.** Once you create your ALB's Security Group (in Step 3), you will **edit this rule again** and set the source to the **Security Group ID of your ALB**.
 6. Make sure you have this four inbound rule:
 
-![output](/assets/img/Screenshot_20250627_141614.png)
+![output](/_imgs/post/Screenshot_20250627_141614.png)
 
 
 ---
@@ -118,7 +118,7 @@ For **each** of your backend EC2 instances:
 7.  **Configure Routing (Target Group)**
     * **Target group:** click **Create target group**.
 
-![output](/assets/img/Screenshot_20250627_142616.png)
+![output](/_imgs/post/Screenshot_20250627_142616.png)
     * **Target group name:** `medical-app-tg` (or a name of your choice).
     * **Target type:** `Instances`.
     * **Protocol:** `HTTP`.
@@ -132,7 +132,7 @@ For **each** of your backend EC2 instances:
     * Click **Include as pending below**.
     * Click **Create Target Group**.
 
-![output](/assets/img/Screenshot_20250627_165410.png)
+![output](/_imgs/post/Screenshot_20250627_165410.png)
 
 9.    * **Listeners and routing:**
         * By default, `HTTP: 80` will be listed.
@@ -140,7 +140,7 @@ For **each** of your backend EC2 instances:
         * Click **Add listener** and add `HTTPS: 443`.
         * Again select target group, click reload icon and select your target group.
 
- ![output](/assets/img/Screenshot_20250627_142833.png)
+ ![output](/_imgs/post/Screenshot_20250627_142833.png)
 
 10. * **Secure listener settings: SSL Certificate (for HTTPS: 443 Listener):**
         * Choose **From ACM (recommended)**.
@@ -148,19 +148,19 @@ For **each** of your backend EC2 instances:
         * Once the certificate is issued in ACM or already have it, refresh and select it from the dropdown.
     * **Security Policy:** Stick with the default (or recommended).
 
-![output](/assets/img/Screenshot_20250627_143045.png)
+![output](/_imgs/post/Screenshot_20250627_143045.png)
 
 
 11. **Review and Create Application Load Balancer**
 
-![output](/assets/img/Screenshot_20250627_143151.png)
+![output](/_imgs/post/Screenshot_20250627_143151.png)
     * Review all your settings carefully.
     * Click **Create load balancer**.
 
 
 Wait a few minutes for the ALB to provision and become `active`. You can monitor its state in the Load Balancers section.
 
-![output](/assets/img/Screenshot_20250627_143231.png)
+![output](/_imgs/post/Screenshot_20250627_143231.png)
 ---
 
 
@@ -169,11 +169,11 @@ Wait a few minutes for the ALB to provision and become `active`. You can monitor
 1.  Once your ALB shows as `active`, go back to the **Load Balancers** section in the EC2 Dashboard.
 2.  Select your newly created ALB.
 
-![output](/assets/img/Screenshot_20250627_150532.png)
+![output](/_imgs/post/Screenshot_20250627_150532.png)
 
 3.  Copy its **DNS name** (it will look something like `medical-app-alb-41267975.us-east-1.elb.amazonaws.com`).
 
-![output](/assets/img/Screenshot_20250627_151554.png)
+![output](/_imgs/post/Screenshot_20250627_151554.png)
 
 4.  * **Type:** `CNAME`
     * **Name:** `medical`
@@ -187,15 +187,15 @@ Wait a few minutes for the ALB to provision and become `active`. You can monitor
 1.  Open your web browser and navigate to `https://medical.janakkumarshrestha0.com.np`.
 2.  Your ALB should now be distributing traffic to your healthy backend instances.
 
-![output](/assets/img/Screenshot_20250627_151843.png)
+![output](/_imgs/post/Screenshot_20250627_151843.png)
 
 3.  To confirm load balancing, you can temporarily modify your `index.php` (Heading) on *each* backend server to display a unique heading identifier. Then, refresh the browser multiple times. You should see the heading change, indicating that the ALB is distributing requests.
 
 4. Refreshing:
-![output](/assets/img/Screenshot_20250627_151927.png)
+![output](/_imgs/post/Screenshot_20250627_151927.png)
 
 5. Refreshing:
-![output](/assets/img/Screenshot_20250627_152124.png)
+![output](/_imgs/post/Screenshot_20250627_152124.png)
 
 6.  **Remember to remove these temporary heading identifiers** once you've confirmed load balancing.
 

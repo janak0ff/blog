@@ -430,7 +430,7 @@ You should see:
 Hello from Docker!
 ```
 
-![Output-Dockerfile](/assets/img/Build-image-Dockerfile.png)
+![Output-Dockerfile](/_imgs/post/Build-image-Dockerfile.png)
 
 🎉 You've successfully built a Docker image and run a web app inside a container!
 
@@ -543,7 +543,7 @@ Pushed
 latest: digest: sha256:... size: ...
 ```
 
-![Output-docker image push to docker hub](/assets/img/docker-image-pull-to-dockerhub.png)
+![Output-docker image push to docker hub](/_imgs/post/docker-image-pull-to-dockerhub.png)
 
 ✅ Success! Your image is now available on Docker Hub.
 

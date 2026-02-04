@@ -16,7 +16,7 @@ description: guiding you through deploying your Django todo app on an AWS EC2 in
       * Port range: `8000` (for virtual env testing) and `7777` (for Docker testing).
       * Source type: `Anywhere`
 
-![out](/assets/img/Screenshot_20250804_173244.png)
+![out](/_imgs/post/Screenshot_20250804_173244.png)
 
 ### 1\. Connect to Your EC2 Instance via SSH
 
@@ -68,7 +68,7 @@ Once connected via SSH to your EC2 instance:
     ```
     Your prompt should now show `(venv)` at the beginning, indicating the virtual environment is active.
 
-![out](/assets/img/Screenshot_20250804_161105.png)
+![out](/_imgs/post/Screenshot_20250804_161105.png)
 
 If you want to **Deactivate the current virtual environment(Dont do)**
 ```bash
@@ -107,7 +107,7 @@ You need to tell Django about your EC2 instance's public IP and prepare it for a
     ```
 5.  **Save and Exit:** Press `Ctrl+X`, then `Y`, then `Enter`.
 
-![out](/assets/img/Screenshot_20250804_161344.png)
+![out](/_imgs/post/Screenshot_20250804_161344.png)
 
 ### 6\. Prepare Database and Static Files
 
@@ -125,7 +125,7 @@ You need to tell Django about your EC2 instance's public IP and prepare it for a
     ```bash
     python3 manage.py createsuperuser
     ```
-![out](/assets/img/Screenshot_20250804_171012.png)
+![out](/_imgs/post/Screenshot_20250804_171012.png)
 
 ### 7\. Test with Django's Development Server 
 
@@ -140,7 +140,7 @@ This is just to confirm your app runs before setting up production servers.
     *If you get a `DisallowedHost` error, double-check that your EC2 Public IP is correctly added to `ALLOWED_HOSTS` in `settings.py`.*
     *Make sure **Port 8000** is open in your EC2 instance's Inbound Security Group.*
 
-![out](/assets/img/Screenshot_20250804_170706.png)
+![out](/_imgs/post/Screenshot_20250804_170706.png)
 
 ### 8\. Run in Background with `nohup` (Temporary)
 
@@ -154,7 +154,7 @@ To keep the development server running even after you close your SSH session:
     You'll see a message about output being redirected to `nohup.out`. You can check it with `tail -f nohup.out`.
     *To stop it later: `ps aux | grep 'runserver' | grep -v 'grep'` to find the PID, then `kill <PID>`.*
 
-![out](/assets/img/Screenshot_20250804_175254.png)
+![out](/_imgs/post/Screenshot_20250804_175254.png)
 -----
 
 ## Part 3: Containerizing with Docker
@@ -230,11 +230,11 @@ sudo docker run -d -p 7777:7777 django-todo-app
     ```
     You should see your `django-todo-app` container listed with a `Status` of "Up...".
 
-![out](/assets/img/Screenshot_20250804_172754.png)
+![out](/_imgs/post/Screenshot_20250804_172754.png)
 
 2.  **Access in browser:** Ensure **Port 8001** is open in your EC2 Security Group. Then, open your web browser and go to `http://44.202.47.32:7777/todos/`.
 
-![out](/assets/img/Screenshot_20250804_172945.png)
+![out](/_imgs/post/Screenshot_20250804_172945.png)
 
 -----
 ###  Prepare Your Local Project for Deployment
@@ -247,7 +247,7 @@ sudo docker run -d -p 7777:7777 django-todo-app
         ```bash
         pip freeze > requirements.txt
         ```
-![out](/assets/img/Screenshot_20250804_174944.png)   
+![out](/_imgs/post/Screenshot_20250804_174944.png)   
 
 ###  Install Dependencies
 
@@ -258,7 +258,7 @@ sudo docker run -d -p 7777:7777 django-todo-app
     *If `pip` command doesn't work directly (e.g., `Command 'pip' not found`), use `python3 -m pip install -r requirements.txt` instead.*
 -----
 
-![out](/assets/img/Screenshot_20250804_175444.png)
+![out](/_imgs/post/Screenshot_20250804_175444.png)
 
 -----
 

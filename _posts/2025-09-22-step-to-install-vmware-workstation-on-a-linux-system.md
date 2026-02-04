@@ -22,7 +22,7 @@ description: Step to install VMware Workstation on a Linux system.
 
 3. Save it in `/Downloads`.
 
-![output](/assets/img/Screenshot_20250922_033943.png)
+![output](/_imgs/post/Screenshot_20250922_033943.png)
 
 ---
 
@@ -59,7 +59,7 @@ Run the installer with:
 sudo ./VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle
 ```
 
-![output](/assets/img/Screenshot_20250922_033153.png)
+![output](/_imgs/post/Screenshot_20250922_033153.png)
 
 
 ---
@@ -68,7 +68,7 @@ sudo ./VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle
 
 After installation, launch VMware:
 
-![output](/assets/img/Screenshot_20250922_034250.png)
+![output](/_imgs/post/Screenshot_20250922_034250.png)
 
 
 ---

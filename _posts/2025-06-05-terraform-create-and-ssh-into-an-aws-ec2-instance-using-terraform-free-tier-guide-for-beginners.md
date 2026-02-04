@@ -21,7 +21,7 @@ step-by-step to create a **Virtual Machine (EC2 instance)** on **AWS Free Tier**
 * Type: RSA
 * Save the `.pem` file (e.g., `my-key.pem`) securely
 
-![aws key pair create](/assets/img/aws-key-pair-pem.png)
+![aws key pair create](/_imgs/post/aws-key-pair-pem.png)
 
 #### Download and move it to your project Directory and Check Permissions of the `.pem` File
 ```bash
@@ -68,7 +68,7 @@ terraform -version
 💡 Get access keys from:
 **AWS Console > IAM > Users > Your Username > Security Credentials > Access Keys**
 
-![terraform aws key](/assets/img/terraform-aws-acess-key.png)
+![terraform aws key](/_imgs/post/terraform-aws-acess-key.png)
 
 ```bash
 aws configure
@@ -83,7 +83,7 @@ Enter the following:
 
 After this steps, two files are auto created inside **/home/username/.aws**
 
-![aws config](/assets/img/aws-terraform-cred-home.png)
+![aws config](/_imgs/post/aws-terraform-cred-home.png)
 
 ---
 
@@ -238,7 +238,7 @@ terraform apply
 It will show you a plan. Type `yes` to proceed.
 
 
-![terraform-apply](/assets/img/terraform-apply-to-aws.png)
+![terraform-apply](/_imgs/post/terraform-apply-to-aws.png)
 
 ---
 
@@ -251,8 +251,8 @@ It will show you a plan. Type `yes` to proceed.
 
 📝 Use `ec2-user` for Amazon Linux AMI (or `ubuntu` if you switch to Ubuntu AMI).
 
-![ssh to aws](/assets/img/terraform-aws-ssh.png)
-![aws](/assets/img/aws-instance-terra.png)
+![ssh to aws](/_imgs/post/terraform-aws-ssh.png)
+![aws](/_imgs/post/aws-instance-terra.png)
 
 
 ### ✅ Destroy the Instance 

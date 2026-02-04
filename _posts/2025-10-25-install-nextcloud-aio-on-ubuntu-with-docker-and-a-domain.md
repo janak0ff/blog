@@ -128,11 +128,11 @@ Open your web browser and navigate to the AIO interface using your server's publ
 
 1.  Click **Open Nextcloud AIO login**.
 
-![output](/assets/img/Screenshot_20251028_153321.png)
+![output](/_imgs/post/Screenshot_20251028_153321.png)
 
 2.  Enter the **Passphrase** you copied to access the AIO dashboard.
 
-![output](/assets/img/Screenshot_20251028_153343.png)
+![output](/_imgs/post/Screenshot_20251028_153343.png)
 
 ### Step 5: Configure the Domain (Troubleshooting Proxies)
 
@@ -140,7 +140,7 @@ Open your web browser and navigate to the AIO interface using your server's publ
 
 2.  **Troubleshooting the Proxy:** If you use a service like Cloudflare and receive a "DNS config is not set..." error, you **must** temporarily disable the Cloudflare proxy (set the record to **DNS only/Grey Cloud**) to allow Nextcloud to obtain the SSL certificate.
 
-![output](/assets/img/Screenshot_20251028_171243.png)
+![output](/_imgs/post/Screenshot_20251028_171243.png)
 
 3.  Once the domain check passes, you can proceed.
 
@@ -164,7 +164,7 @@ Open your web browser and navigate to the AIO interface using your server's publ
 
 > **Recommendation:** For a standard setup, it is highly recommended to enable **Nextcloud Office**, **Nextcloud Talk**, and **Imaginary** for the best user experience. Only enable **ClamAV** and **Fulltextsearch** if you have sufficient RAM and CPU power (8GB+ RAM recommended) and plan on managing a large amount of data or users.
 
-![output](/assets/img/Screenshot_20251028_153536.png)
+![output](/_imgs/post/Screenshot_20251028_153536.png)
 
 
 The AIO system will now download, configure, and start the entire Nextcloud stack.
@@ -175,14 +175,14 @@ Once the deployment is complete, the AIO status page will show all major contain
 
 1.  **Copy the Initial Nextcloud Password:** The screen provides a new **Initial Nextcloud password** for the main admin account. Copy it.
 
-![output](/assets/img/Screenshot_20251028_155112.png)
+![output](/_imgs/post/Screenshot_20251028_155112.png)
 
 2.  Click **Open your Nextcloud**.
 
 You will be redirected to your secure domain URL (e.g., `https://nextcloud.janakkumarshrestha0.com.np`). Log in with the user **admin** and the new password.
 
-![output](/assets/img/Screenshot_20251028_155143.png)
-![output](/assets/img/Screenshot_20251028_160409.png)
+![output](/_imgs/post/Screenshot_20251028_155143.png)
+![output](/_imgs/post/Screenshot_20251028_160409.png)
 
 **Congratulations\!** You now have a fully functional, self-hosted Nextcloud instance\!
 

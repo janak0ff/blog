@@ -23,7 +23,7 @@ sudo apt install docker.io docker-compose -y
 sudo systemctl enable docker
 sudo systemctl start docker
 ```
-![output](/assets/img/Screenshot_20250922_015723.png)
+![output](/_imgs/post/Screenshot_20250922_015723.png)
 
 ---
 
@@ -79,7 +79,7 @@ volumes:
 ```bash
 docker-compose up -d
 ```
-![output](/assets/img/Screenshot_20250922_021256.png)
+![output](/_imgs/post/Screenshot_20250922_021256.png)
 
 
 ---
@@ -91,8 +91,8 @@ Open in browser:
 ```
 http://192.168.63.132:8080
 ```
-![output](/assets/img/Screenshot_20250922_021604.png)
-![output](/assets/img/Screenshot_20250922_023921.png)
+![output](/_imgs/post/Screenshot_20250922_021604.png)
+![output](/_imgs/post/Screenshot_20250922_023921.png)
 
 
 ---
@@ -183,7 +183,7 @@ There are two main types of web hosting with Apache:
 5. **Point Your Domain to the Server**
    In your DNS settings, create an **A record** for `wp.janakkumarshrestha0.com.np` pointing to your server’s public IP.
 
-![output](/assets/img/Screenshot_20251006_235135.png)
+![output](/_imgs/post/Screenshot_20251006_235135.png)
 
 
 6. **Access Your Application**
@@ -289,7 +289,7 @@ By setting up Let’s Encrypt SSL with Apache, we:
 Now your web application is hosted **professionally with HTTPS** at:
 👉 `https://wp.janakkumarshrestha0.com.np/`
 
-![output](/assets/img/Screenshot_20251006_234649.png)
+![output](/_imgs/post/Screenshot_20251006_234649.png)
 
 ---
 

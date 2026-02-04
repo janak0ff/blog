@@ -39,7 +39,7 @@ Here's a step-by-step guide to get your static website live on AWS S3:
       * Click "Add folder" to upload an entire folder (e.g., your `images` folder).
   * **Upload:** Once you've added all your website files, click the "Upload" button at the bottom.
 
-![output](/assets/img/Screenshot_20250627_163127.png)
+![output](/_imgs/post/Screenshot_20250627_163127.png)
 
 
 **3. Enable Static Website Hosting**
@@ -54,7 +54,7 @@ Here's a step-by-step guide to get your static website live on AWS S3:
   * **Save Changes:** Click "Save changes."
   * **Note the Endpoint URL:** After saving, scroll down again to "Static website hosting." You will see a "Bucket website endpoint" URL (e.g., `http://your-bucket-name.s3-website-region.amazonaws.com`). This is the URL where your website will be accessible. Copy this URL.
 
-![output](/assets/img/Screenshot_20250627_163256.png)
+![output](/_imgs/post/Screenshot_20250627_163256.png)
 
 **4. Set Bucket Policy for Public Read Access**
 
@@ -91,7 +91,7 @@ Even though you unchecked "Block all public access" earlier, you still need a bu
 
   * **Save Changes:** Click "Save changes."
 
-![output](/assets/img/Screenshot_20250627_163517.png)
+![output](/_imgs/post/Screenshot_20250627_163517.png)
 
 
 **5. Make Objects Public (using ACLs)** - optional
@@ -110,7 +110,7 @@ While the bucket policy grants public read access, you also need to ensure that 
 
 [http://janakshrestha.s3-website-us-east-1.amazonaws.com](http://janakshrestha.s3-website-us-east-1.amazonaws.com/)
 
-![output](/assets/img/Screenshot_20250627_163819.png)
+![output](/_imgs/post/Screenshot_20250627_163819.png)
 
 
 ### Important Considerations for Beginners:

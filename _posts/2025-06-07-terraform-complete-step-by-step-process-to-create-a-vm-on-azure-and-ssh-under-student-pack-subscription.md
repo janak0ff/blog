@@ -83,7 +83,7 @@ az account show --query "{subscriptionId:id, tenantId:tenantId}"
 * `azure_tenant_id`
 
 ### Get Azure Subscription ID via GUI
-![output](/assets/img/azure-subscription-id.png)
+![output](/_imgs/post/azure-subscription-id.png)
 
 1. **Go to Azure Portal**
    👉 Visit: [https://portal.azure.com](https://portal.azure.com)
@@ -146,7 +146,7 @@ Replace `<subscription-id>` with the actual value
 2. Type **“App registrations”** and select it.
 3. Click **“+ New registration”**.
 
-![output](/assets/img/terra-azure-app-reg.png)
+![output](/_imgs/post/terra-azure-app-reg.png)
 
 #### **Step 2: Register the Application**
 
@@ -159,7 +159,7 @@ Replace `<subscription-id>` with the actual value
 
 ### 🔹 Step 3: Get the IDs
 
-![output](/assets/img/terraform-janak-idss.png-)
+![output](/_imgs/post/terraform-janak-idss.png-)
 
 #### ✅ **Client ID** (`azure_client_id`)
 
@@ -175,7 +175,7 @@ Replace `<subscription-id>` with the actual value
 
 ### 🔹 Step 4: Create a Client Secret
 
-![output](/assets/img/Certificates-secrets-terra-azure.png)
+![output](/_imgs/post/Certificates-secrets-terra-azure.png)
 
 1. In the left menu, click **“Certificates & secrets”**.
 2. Under **Client secrets**, click **“+ New client secret”**.
@@ -216,9 +216,9 @@ To give your app permissions to deploy resources:
 4. Under the **Privileged administrator roles** choose: **Contributor**
 5. Assign access to: **User, group, or service principal**
 6. Select Members: search for your app name (`Terraform-janak`) and select it.
-![output](/assets/img/Screenshot_20250614_191748.png)
+![output](/_imgs/post/Screenshot_20250614_191748.png)
 7. Click **Save**.
-![output](/assets/img/Screenshot_20250614_191950.png)
+![output](/_imgs/post/Screenshot_20250614_191950.png)
 
 ---
 
@@ -465,7 +465,7 @@ terraform apply
 
 Confirm when prompted by typing `yes`.
 
-![output](/assets/img/using-terraform-to-create-azurevm.png)
+![output](/_imgs/post/using-terraform-to-create-azurevm.png)
 ---
 
 ## ✅ SSH to newly created azure VM
@@ -476,10 +476,10 @@ ssh -i ~/.ssh/id_rsa janak_azure@51.136.100.152
 
 Use your own your USERNAME & IP
 
-![output](/assets/img/ssh-to-azure-vm-terra.png)
+![output](/_imgs/post/ssh-to-azure-vm-terra.png)
 
 ---
-![output](/assets/img/Screenshot_20250614_192245.png)
+![output](/_imgs/post/Screenshot_20250614_192245.png)
 
 ---
 
@@ -490,7 +490,7 @@ When you're done, destroy the resources:
 ```bash
 terraform destroy
 ```
-![output](/assets/img/terra-az-destroy.png)
+![output](/_imgs/post/terra-az-destroy.png)
 
 
 ---

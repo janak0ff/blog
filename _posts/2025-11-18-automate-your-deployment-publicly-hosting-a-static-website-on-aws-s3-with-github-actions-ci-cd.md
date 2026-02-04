@@ -22,7 +22,7 @@ Deploying a website shouldn't be a tedious manual task. By setting up a Continuo
 
 Your project is structured cleanly with all website files located in the root directory. This simplifies the deployment command.
 
-![output](/assets/img/Screenshot_20251119_160912.png)
+![output](/_imgs/post/Screenshot_20251119_160912.png)
 
 
 -----
@@ -47,7 +47,7 @@ We need a destination for your website files and a policy that grants public acc
       * Click **Add Statement**, then **Generate Policy**.
       * Copy the generated JSON code and paste it into the **Permissions** tab \> **Bucket policy** section of your S3 bucket.
 
-![output](/assets/img/Screenshot_20251119_162913.png)
+![output](/_imgs/post/Screenshot_20251119_162913.png)
 
 
 > **CRITICAL:** Ensure the "Block public access (bucket settings)" is turned **OFF** for your bucket to be publicly accessible.
@@ -68,7 +68,7 @@ We will use **GitHub Secrets** to securely store your AWS Access Keys, allowing 
           * **Name:** `AWS_SECRET_ACCESS_KEY`
           * **Value:** *(Your IAM Secret Access Key)*
 
-![output](/assets/img/Screenshot_20251119_162513.png)
+![output](/_imgs/post/Screenshot_20251119_162513.png)
 
 -----
 
@@ -128,13 +128,13 @@ Commit and push your new `.github/workflows/main.yml` file to the `main` branch.
     ```
 2.  Go to your GitHub repository and click the **Actions** tab. You will see the **`Deploy Static Website to S3`** workflow running.
 
-![output](/assets/img/Screenshot_20251119_162603.png)
+![output](/_imgs/post/Screenshot_20251119_162603.png)
 
 3.  Once the workflow status turns green (Success), go to your S3 bucket's **Properties** and click the **Endpoint URL** under Static website hosting.
 
-![output](/assets/img/Screenshot_20251119_163338.png)
+![output](/_imgs/post/Screenshot_20251119_163338.png)
 
 
 Your static website is now live\! Every subsequent `git push` will automatically trigger this pipeline, keeping your site perpetually synchronized.
 
-![output](/assets/img/Screenshot_20251119_163545.png)
+![output](/_imgs/post/Screenshot_20251119_163545.png)

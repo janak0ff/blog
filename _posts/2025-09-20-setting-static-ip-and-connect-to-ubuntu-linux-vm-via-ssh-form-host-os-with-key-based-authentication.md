@@ -72,7 +72,7 @@ ping google.com
 Connect to your **Linux Virtual Machine (VM)** terminal from an **host via SSH**. 
 ---
 
-![output](/assets/img/Screenshot_20250924_010745.png)
+![output](/_imgs/post/Screenshot_20250924_010745.png)
 
 ## Understand What SSH Is
 

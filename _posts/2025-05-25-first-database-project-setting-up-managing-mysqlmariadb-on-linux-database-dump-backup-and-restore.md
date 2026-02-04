@@ -43,11 +43,11 @@ description: Dive into this practical assignment to learn how to install and sec
 
 ---
 
-![output](/assets/img/sql-output-terminal.png)
+![output](/_imgs/post/sql-output-terminal.png)
 
 ---
 
-![output](/assets/img/db-gui-output.png)
+![output](/_imgs/post/db-gui-output.png)
 
 
 ---
@@ -210,7 +210,7 @@ sudo mysql_secure_installation
          
 
         * **Success:** If you see a blank screen or a garbage character (like `~`), it means the connection was established. Press `Ctrl + ]`, then type `quit` and press `Enter`.
-        ![output-sqlserver](/assets/img/succ-telnet-sql.png)
+        ![output-sqlserver](/_imgs/post/succ-telnet-sql.png)
         * **Failure:** If it says "Connection refused," "No route to host," or hangs, it means the port isn't reachable. Recheck your VM's firewall (`ufw`), MariaDB's `bind-address` in `50-server.cnf`, and your VM's network settings (Bridged/NAT + Port Forwarding).
 
        

@@ -541,11 +541,11 @@ In the same directory:
 ```bash
 docker compose up --build -d
 ```
-![output](/assets/img/Screenshot_20250616_182310.png)
+![output](/_imgs/post/Screenshot_20250616_182310.png)
 
 Visit: **[http://localhost:8899](http://localhost:8899)**
 
-![output](/assets/img/php-sql-app-dockerize.png)
+![output](/_imgs/post/php-sql-app-dockerize.png)
 
 
 ---

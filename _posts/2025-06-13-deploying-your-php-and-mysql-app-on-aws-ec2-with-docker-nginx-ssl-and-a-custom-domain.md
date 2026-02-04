@@ -14,7 +14,7 @@ description: Learn how to take your PHP and MySQL application from local develop
 
 * You have an AWS account and have already launched an EC2 instance (e.g., Ubuntu).
 * Check all these there options while lunching instance.
-![output](/assets/img/Screenshot_20250617_142533.png)
+![output](/_imgs/post/Screenshot_20250617_142533.png)
 * You have SSH access to your EC2 instance from your Linux machine.
 * You have registered the domain `janakkumarshrestha0.com.np` and have control over its DNS records.
 * 📦 GitHub Repository: 👉 [Complete source code and setup files](https://github.com/janak0ff/Dockerize-PHP-and--SQL-App)
@@ -99,7 +99,7 @@ Your EC2 instance's security group acts as a virtual firewall. You need to open 
     * **Type:** HTTPS, **Port range:** 443, **Source:** Anywhere (0.0.0.0/0)
     * (Optional, only if you want direct access to your Docker app without Nginx) **Type:** Custom TCP, **Port range:** 8899, **Source:** Anywhere (0.0.0.0/0)
 
-![output](/assets/img/Screenshot_20250618_154318.png)
+![output](/_imgs/post/Screenshot_20250618_154318.png)
 ---
 
 ### Step 4: Deploy Your Docker Application
@@ -131,13 +131,13 @@ docker ps
 
 You should see both `web` and `db` containers running.
 
-![output](/assets/img/Screenshot_20250617_134401.png)
+![output](/_imgs/post/Screenshot_20250617_134401.png)
 
 **Test the application directly (optional, if port 8899 is open):**
 
 Open your web browser and navigate to `http://your_ec2_public_ip:8899` OR `http://35.173.177.9:8899`. You should see your PHP application.
 
-![output](/assets/img/Screenshot_20250618_153810.png)
+![output](/_imgs/post/Screenshot_20250618_153810.png)
 
 ---
 
@@ -238,7 +238,7 @@ Follow the prompts:
 * Agree to the terms of service.
 * Choose whether to redirect HTTP to HTTPS (Highly Recommended: Select option `2` to redirect all HTTP traffic to HTTPS).
 
-![output](/assets/img/Screenshot_20250617_135421.png)
+![output](/_imgs/post/Screenshot_20250617_135421.png)
 
 Certbot will automatically modify your Nginx configuration, obtain the certificate, and set up automatic renewal.
 
@@ -280,7 +280,7 @@ server {
 
 Open your web browser and navigate to `https://medical.janakkumarshrestha0.com.np`. You should see your application, and a padlock icon indicating a secure connection.
 
-![output](/assets/img/Screenshot_20250617_135131.png)
+![output](/_imgs/post/Screenshot_20250617_135131.png)
 
 ---
 
