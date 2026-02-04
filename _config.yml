@@ -96,11 +96,11 @@ theme_mode: # [light | dark]
 # cdn: https://raw.githubusercontent.com/janak0ff/blog/master/_imgs
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /_imgs/janak.jpg
+avatar: /assets/janak.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: /_imgs/janak.jpg # string, local or CORS resources
+social_preview_image: /assets/janak.jpg # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -213,8 +213,6 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
-
-include: ["_imgs"]
 
 jekyll-archives:
   enabled: [categories, tags]

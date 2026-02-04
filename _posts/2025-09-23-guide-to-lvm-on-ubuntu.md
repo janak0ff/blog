@@ -37,7 +37,7 @@ sudo apt update && sudo apt install lvm2 -y
 
 A **physical volume (PV)** is a physical disk or partition that is designated for use by LVM. It's the building block of an LVM setup. For this guide, we'll assume you have a spare disk named `/dev/sdc`. If you don't have a spare disk, you can create a partition on an existing disk and use that. Use the following command to create a PV:
 
-![output](/_imgs/post/Screenshot_20250924_045117.png)
+![output](/assets/img/Screenshot_20250924_045117.png)
 
 ```bash
 sudo pvcreate /dev/xvdc
@@ -63,7 +63,7 @@ sudo pvs
 
 A **volume group (VG)** pools one or more physical volumes into a single logical entity. It's the central storage space from which you'll create logical volumes. Create a VG named `janak-vg` using your new physical volume:
 
-![output](/_imgs/post/Screenshot_20250924_045742.png)
+![output](/assets/img/Screenshot_20250924_045742.png)
 
 
 ```bash
@@ -90,7 +90,7 @@ sudo vgs
 
 * Use the **`vgextend`** command to add the newly created PV to your existing volume group.
 
-![output](/_imgs/post/Screenshot_20250924_050244.png)
+![output](/assets/img/Screenshot_20250924_050244.png)
 
     ```bash
     sudo vgextend janak-vg /dev/xbdc
@@ -104,7 +104,7 @@ sudo vgs
 
 A **logical volume (LV)** is the equivalent of a partition in a traditional setup. It's a "virtual" partition created from the free space in a volume group. This is the volume that you will format and mount. Create a 5GB logical volume named `janak-data-lv` within `janak-vg`:
 
-![output](/_imgs/post/Screenshot_20250924_052950.png)
+![output](/assets/img/Screenshot_20250924_052950.png)
 
 ```bash
 sudo lvcreate -L 550G -n janak-data-lv janak-vg
@@ -147,7 +147,7 @@ Thus, `-L` is for size units, and `-l` is for extents within LVM's internal allo
 
 ### Format and Mount the Logical Volume
 
-![output](/_imgs/post/Screenshot_20250924_053608.png)
+![output](/assets/img/Screenshot_20250924_053608.png)
 
 The logical volume is now a raw block device and needs to be formatted with a file system before it can be used. We'll use the `ext4` file system. The path to your new LV will be `/dev/janak-vg/janak-data-lv`.
 
@@ -273,7 +273,7 @@ Now, your logical volume will be mounted automatically and ready to use every ti
 
 One of the main benefits of LVM is the ability to **easily resize logical volumes**. Let's extend our LV to 555GB.
 
-![output](/_imgs/post/Screenshot_20250924_055649.png)
+![output](/assets/img/Screenshot_20250924_055649.png)
 
 First, you need to extend the logical volume itself:
 
@@ -328,7 +328,7 @@ sudo lvremove /dev/janak-vg/janak-data-lv
 
 To remove a volume group (VG), you must first remove all the logical volumes (LVs) residing within it. This is a critical safety measure to prevent data loss. Once the logical volumes are gone, you can remove the volume group itself.
 
-![output](/_imgs/post/Screenshot_20250924_060847.png)
+![output](/assets/img/Screenshot_20250924_060847.png)
 
 ```bash
 sudo vgremove janak-vg
@@ -342,7 +342,7 @@ sudo vgremove janak-vg
 
 You'll use the **`vgreduce`** command to remove `/dev/xvdc` from the `janak-vg` volume group. Since there are no logical volumes (LVs) or data on this physical volume, this command will execute without any issues.
 
-![output](/_imgs/post/Screenshot_20250924_050719.png)
+![output](/assets/img/Screenshot_20250924_050719.png)
 
 ```bash
 sudo vgreduce janak-vg /dev/xvdc
@@ -352,7 +352,7 @@ sudo vgreduce janak-vg /dev/xvdc
 
 ## Remove the physical volume:
 
-![output](/_imgs/post/Screenshot_20250924_061127.png)
+![output](/assets/img/Screenshot_20250924_061127.png)
 
 
 ```bash

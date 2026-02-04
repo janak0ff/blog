@@ -9,9 +9,9 @@ description: Local Node.js App with HTTPS on Ubuntu 22.04 Using Self-Signed SSL,
 ---
 
 
-![output](/_imgs/post/Screenshot_20251015_110425.png)
+![output](/assets/img/Screenshot_20251015_110425.png)
 
-![output](/_imgs/post/Screenshot_20251015_114200.png)
+![output](/assets/img/Screenshot_20251015_114200.png)
 
 ---
 

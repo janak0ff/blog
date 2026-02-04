@@ -37,7 +37,7 @@ curl wttr.in/kathmandu
 
 This returns current and forecasted weather information in human-readable format.
 
-## ![weather-Kathmandu](/_imgs/post/wtt-kathmandu.png)
+## ![weather-Kathmandu](/assets/img/wtt-kathmandu.png)
 
 ---
 

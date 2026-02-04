@@ -204,7 +204,7 @@ Now, let's execute your first Ansible playbook\!
 
     You'll see output that shows each task being executed.
 
-    ![output](/_imgs/post/Screenshot_20250531_114909.png)
+    ![output](/assets/img/Screenshot_20250531_114909.png)
 
     
 
@@ -214,7 +214,7 @@ Now, let's execute your first Ansible playbook\!
 
     **Open a web browser** and navigate to `http://192.168.253.100`. You should see the "Hello from Ansible!" message.
 
-    ![output](/_imgs/post/Screenshot_20250531_114727.png)
+    ![output](/assets/img/Screenshot_20250531_114727.png)
     
     * **SSH into your VM** (`ssh janak@192.168.253.100`) and verify:
     * **Nginx status:** `sudo systemctl status nginx` (It should be active/running).

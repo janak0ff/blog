@@ -27,7 +27,7 @@ sudo systemctl start apache2
 
 Test: Open `http://192.168.63.132` in a browser. You should see the Apache default page.
 
-![out](/_imgs/post/Screenshot_20250922_001138.png)
+![out](/assets/img/Screenshot_20250922_001138.png)
 
 ---
 
@@ -124,7 +124,7 @@ http://192.168.63.132/phpmyadmin
 
 Login with MariaDB username/password.
 
-![out](/_imgs/post/Screenshot_20250922_001847.png)
+![out](/assets/img/Screenshot_20250922_001847.png)
 
 ---
 

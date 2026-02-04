@@ -49,7 +49,7 @@ ACM needs to verify that you own or control the domain for which you're requesti
     * Click "Confirm and request."
 
 
-![output](/_imgs/post/Screenshot_20250627_152652.png)
+![output](/assets/img/Screenshot_20250627_152652.png)
 
 
 9.  **Validate Domain Ownership (Crucial Step):**
@@ -76,7 +76,7 @@ ACM needs to verify that you own or control the domain for which you're requesti
     * Click "Save."
 
 
-![output](/_imgs/post/Screenshot_20250627_153320.png)
+![output](/assets/img/Screenshot_20250627_153320.png)
 
 
 11. **Wait for Validation:**
@@ -85,7 +85,7 @@ ACM needs to verify that you own or control the domain for which you're requesti
     * Refresh the ACM console page periodically.
     * Once ACM successfully validates the domain ownership via the CNAME record, the certificate status will change to **"Issued."**
 
-![output](/_imgs/post/Screenshot_20250627_154231.png)
+![output](/assets/img/Screenshot_20250627_154231.png)
 
 **After the Certificate is Issued:**
 

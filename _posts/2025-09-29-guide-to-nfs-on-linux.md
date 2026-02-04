@@ -10,7 +10,7 @@ description: Step-by-step guide to NFS in Linux, from basic to advanced concepts
 ---
 
 
-![output](/_imgs/post/Screenshot_20251007_053150.png)
+![output](/assets/img/Screenshot_20251007_053150.png)
 
 ***
 

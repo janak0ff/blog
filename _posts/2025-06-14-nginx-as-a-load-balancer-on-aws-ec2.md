@@ -81,7 +81,7 @@ This is crucial for ensuring Nginx can talk to all backend app servers, and only
 * **Outbound Rules:**
     * Allow traffic to your backend instances (your other EC2 instances, and itself) on Custom TCP 8899. The most secure way is to set the destination to the **Security Group ID of your backend instances** (if they share one). Alternatively, you could whitelist the private IPs of all your backend instances individually.
 
-    ![output](/_imgs/post/Screenshot_20250618_160635.png)
+    ![output](/assets/img/Screenshot_20250618_160635.png)
 
 **2. Security Group for All Other Backend EC2 Instances (Instance B, C, etc.):**
 
@@ -94,7 +94,7 @@ This is crucial for ensuring Nginx can talk to all backend app servers, and only
 
 Open your web browser and navigate to `http://your_ec2_public_ip:8899` , `http://100.27.29.251:8899/`. You should see your PHP application.
 
-![output](/_imgs/post/Screenshot_20250618_163814.png)
+![output](/assets/img/Screenshot_20250618_163814.png)
 
 ---
 
@@ -215,10 +215,10 @@ This is where the load balancing configuration goes.
 3. In my case I have modified the heading `Medical Health - Another server` in second instance and `Medical Health - Dr. Janak` is in my primary instance.
 4.  Refresh `https://medical.janakkumarshrestha0.com.np` . You should see the heading message change, indicating that Nginx is distributing requests across all your backend instances.
 
-![output](/_imgs/post/Screenshot_20250618_163040.png)
+![output](/assets/img/Screenshot_20250618_163040.png)
 
 5. Boom..!
 
-![output](/_imgs/post/Screenshot_20250618_163211.png)
+![output](/assets/img/Screenshot_20250618_163211.png)
 
 ---

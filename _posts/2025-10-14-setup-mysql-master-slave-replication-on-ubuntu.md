@@ -368,7 +368,7 @@ This sequence guarantees a clean, stable, and verified replication setup ready f
 
 -----
 
-![output](/_imgs/post/Screenshot_20251014_164013.png)
+![output](/assets/img/Screenshot_20251014_164013.png)
 
 ## Conclusion
 

@@ -9,7 +9,7 @@ description: Self-Hosting Custom DNS Server (BIND9) and Web Server (Apache2) on 
 ---
 
 
-![output](/_imgs/post/Screenshot_20251013_155057.png)
+![output](/assets/img/Screenshot_20251013_155057.png)
 
 
 # **Self-Hosting : Set Up a Custom DNS Server (BIND9) and Web Server (Apache2) on Your VPC VM**
@@ -63,7 +63,7 @@ Install the web server and open its default ports in the VM's local firewall (**
 **Test the Web Server:**
 After these steps, you should be able to access the default Apache "It works\!" page using your VM's public IP address (**103.90.87.59**) in a web browser.
 
-![output](/_imgs/post/Screenshot_20251013_174227.png)
+![output](/assets/img/Screenshot_20251013_174227.png)
 
 
 ## Step 2: DNS Server Installation and Configuration (BIND9)
@@ -199,7 +199,7 @@ Use `nslookup` on your VM to confirm BIND is working locally:
 | `nslookup myweb.local 10.10.1.20` | Forward Lookup Test. | Resolves `myweb.local` to **`10.10.1.20`**. |
 | `nslookup 10.10.1.20 10.10.1.20` | Reverse Lookup Test. | Resolves `10.10.1.20` to **`myweb.local`**. |
 
-![output](/_imgs/post/Screenshot_20251014_075836.png)
+![output](/assets/img/Screenshot_20251014_075836.png)
 
 
 
@@ -250,7 +250,7 @@ Manually editing `/etc/resolv.conf` temporarily overrides your system's DNS sett
 ```bash
 nslookup myweb.local
 ```
-![output](/_imgs/post/Screenshot_20251014_111338.png)
+![output](/assets/img/Screenshot_20251014_111338.png)
 
 
 -----

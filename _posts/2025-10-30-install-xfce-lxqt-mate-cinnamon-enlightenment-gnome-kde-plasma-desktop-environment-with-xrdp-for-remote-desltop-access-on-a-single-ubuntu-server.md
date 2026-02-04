@@ -81,7 +81,7 @@ echo xfce4-session > ~/.xsession
 echo startxfce4 > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251031_172654.png)
+![output](/assets/img/Screenshot_20251031_172654.png)
 
 
 ---
@@ -95,7 +95,7 @@ sudo apt install lubuntu-desktop -y # The full Lubuntu (now LXQt-based) experien
 ```bash
 echo startlxqt > ~/.xsession
 ```
-![output](/_imgs/post/Screenshot_20251031_165528.png)
+![output](/assets/img/Screenshot_20251031_165528.png)
 
 ---
 
@@ -110,7 +110,7 @@ sudo apt install mate-session-manager -y # Installs the core session manager.
 echo mate-session > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251031_171435.png)
+![output](/assets/img/Screenshot_20251031_171435.png)
 
 ---
 
@@ -124,7 +124,7 @@ sudo apt install cinnamon -y # Installs the core Cinnamon package.
 echo cinnamon-session > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251031_173606.png)
+![output](/assets/img/Screenshot_20251031_173606.png)
 
 ---
 
@@ -137,7 +137,7 @@ sudo apt install enlightenment -y # A unique, lightweight, and fast DE/WM.
 echo enlightenment_start > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251031_174205.png)
+![output](/assets/img/Screenshot_20251031_174205.png)
 
 ---
 
@@ -151,7 +151,7 @@ sudo apt install gnome-core # Installs a minimal GNOME experience.
 echo gnome-session > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251101_110535.png)
+![output](/assets/img/Screenshot_20251101_110535.png)
 
 ---
 
@@ -165,7 +165,7 @@ sudo apt install gkde-plasma-desktop # Minimal
 echo startplasma-x11 > ~/.xsession
 ```
 
-![output](/_imgs/post/Screenshot_20251101_123423.png)
+![output](/assets/img/Screenshot_20251101_123423.png)
 
 ---
 

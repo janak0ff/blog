@@ -21,9 +21,9 @@ MariaDB Galera Cluster offers a powerful multi-primary database clustering solut
 This guide walks through the entire process of setting up a three-node MariaDB Galera Cluster from scratch, designed for beginners and Linux users who want a reliable, scalable database cluster.
 
 ***
-![output](/_imgs/post/Screenshot_20251009_044855.png)
+![output](/assets/img/Screenshot_20251009_044855.png)
 
-![output](/_imgs/post/Screenshot_20251009_045038.png)
+![output](/assets/img/Screenshot_20251009_045038.png)
 
 ***
 

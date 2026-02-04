@@ -167,7 +167,7 @@ Access your node app running on 3000 port is accessible form the internet / any 
 localnode.janakkumarshrestha0.com.np
 ```
 
-![output](/_imgs/post/Screenshot_20251108_113237.png)
+![output](/assets/img/Screenshot_20251108_113237.png)
 
 ----
 
@@ -208,7 +208,7 @@ ssh -vvv remote-acc-janak # for more details
 
   * The first time, you may be prompted to authenticate with Cloudflare Access (e.g., a browser login). After that, you will be prompted for your local PC's SSH password or key.
 
-![output](/_imgs/post/Screenshot_20251108_121528.png)
+![output](/assets/img/Screenshot_20251108_121528.png)
 
 ----
 
@@ -399,7 +399,7 @@ Your RDP client connects locally to `33389`, `cloudflared` forwards the traffic 
 
 - Enter your login credential: username and password
 
-![output](/_imgs/post/Screenshot_20251111_171155.png)
+![output](/assets/img/Screenshot_20251111_171155.png)
 
 ---
 
@@ -438,7 +438,7 @@ ssh jack@ssh.janakkumarshrestha0.com.np -o ProxyCommand="C:\Cloudflared\cloudfla
 2.  A browser window opens, prompting you to log in for **Cloudflare Access authentication**.
 3.  Once authenticated, the terminal prompts you to accept the host key, and then logs you in using your **SSH Key** (if previously set up).
 
-![output](/_imgs/post/Screenshot_20251111_165826.png)
+![output](/assets/img/Screenshot_20251111_165826.png)
 
 -----
 
@@ -467,7 +467,7 @@ You need to run the `cloudflared` command in a separate, dedicated terminal wind
       * **Computer/Host:** `127.0.0.1:33389`
 3.  Once the connection establishes, the RDP client will show the login prompt for your remote Linux host machine.
 
-![output](/_imgs/post/Screenshot_20251111_164619.png)
+![output](/assets/img/Screenshot_20251111_164619.png)
 
 ---
 
