@@ -4,7 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I'm Janak,AWS Solutions Architect – Associate a guy in love with Linux, cybersecurity, and automation 🤖.
+# Janak Shrestha
+**DevOps Engineer | AWS Certified Solutions Architect**
 
-I'm a DevOps Engineer with a passion for building scalable and reliable infrastructure. I have a strong background in cloud computing, automation, and security. I'm always looking to learn new technologies and improve my skills.
+📍 Kathmandu, Nepal | 📧 [janak.shrestha.it@gmail.com](mailto:janak.shrestha.it@gmail.com) | 📞 +977 9749407923 | 🔗 [Portfolio](https://janakkumarshrestha0.com.np)
 
+DevOps Engineer with hands-on expertise in architecting and automating scalable cloud infrastructure and CI/CD pipelines. Hands-on experience in containerization (Docker, Kubernetes), infrastructure as code (Terraform, Ansible), and cloud-native deployment on AWS. Holds the AWS Solutions Architect – Associate certification and possesses deep, practical experience across AWS services capabilities. Passionate about implementing resilient, secure, and automated systems that enhance operational efficiency.

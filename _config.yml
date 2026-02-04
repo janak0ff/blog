@@ -14,33 +14,33 @@ timezone: Asia/Kathmandu
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: janak0ff # the main title
+title: Janak # the main title
 
-tagline: Loving tech, Linux, containers, open-source. # it will display as the subtitle
+tagline: AWS Solutions Architect | DevOps Engineer | Cloud Enthusiast. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
- Your go-to resource for all things related to Linux, containers, open-source and programming.
+ Your go-to resource for all things related to AWS, DevOps, Cloud Computing and Automation.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://weblog.janakkumarshrestha0.com.np"
+url: "https://blog.janakkumarshrestha0.com.np"
 
 github:
-  janak0ff: github_username # change to your GitHub sudiplun
+  janak0ff: janak0ff # change to your GitHub username
 
 twitter:
-  janak0ff: twitter_username # change to your Twitter sudiplun
+  devjanak0ff: devjanak0ff # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: janak0ff
-  email: [EMAIL_ADDRESS] # change to your email address
+  name: Janak Shrestha
+  email: janak.shrestha.it@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    - https://linkedin.com/in/username # change to your LinkedIn homepage
+    - https://twitter.com/devjanak0ff # change to your Twitter homepage
+    - https://github.com/janak0ff # change to your GitHub homepage
+    - https://linkedin.com/in/janakkss # change to your LinkedIn homepage
 
 # Site Verification Settings
 webmaster_verifications:
@@ -93,14 +93,14 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# cdn: https://raw.githubusercontent.com/sudiplun/janak0ff/master/_imgs
+# cdn: https://raw.githubusercontent.com/janak0ff/blog/master/_imgs
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /logo.jpeg
+avatar: /_imgs/janak.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: /logo.jpeg # string, local or CORS resources
+social_preview_image: /_imgs/janak.jpg # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
