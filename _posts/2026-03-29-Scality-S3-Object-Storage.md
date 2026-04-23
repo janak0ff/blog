@@ -1,11 +1,12 @@
 ---
 title: Scality S3 Object Storage    
 date: 2025-03-29
-categories: [scality]
+categories: [Storage]
 tags:
   - Scality S3
   - Object Storage
 description: Learn how to install AWS CLI and Rclone, configure profiles, and perform all CRUD operations on Scality S3 object storage from the command line.
+
 ---
 
 # Getting Started with Scality S3 Object Storage: A Complete Beginner's Guide
@@ -13,6 +14,8 @@ description: Learn how to install AWS CLI and Rclone, configure profiles, and pe
 *Learn how to install AWS CLI and Rclone, configure profiles, and perform all CRUD operations on Scality S3 object storage from the command line.*
 
 ---
+
+
 
 ## Table of Contents
 0. [Types of Storage: Block, File, and Object](#types-of-storage)
