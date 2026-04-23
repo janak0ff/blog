@@ -19,7 +19,6 @@ tags:
 
 pin: true
 description: "A hands-on walkthrough of building a centralized monitoring and logging platform using Prometheus, Grafana, Loki, Alertmanager, and Grafana Alloy — with Docker Compose, .env-driven config, AWS S3 log storage, EC2 service discovery, and email alerting."
-
 ---
 
 ## Why I Built This
